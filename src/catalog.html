@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Каталог товаров</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- 🔹 Боковое меню -->
+        <nav class="sidebar">
+            <div>
+                <div class="sidebar-header">
+                    <div class="logo">B</div>
+                    <h4>Меню</h4>
+                </div>
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalog.html">Категории</a></li>
+                    <li class="nav-item"><a class="nav-link" href="orders.html">Заказы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+
+            <!-- 🔹 Профиль и Выход -->
+            <div class="profile-section">
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link" href="profile.html">Профиль</a></li>
+                    <li class="nav-item"><a class="nav-link" href="logout.html">Выход</a></li>
+                </ul>
+
+                <!-- 🔹 Кнопка "Пользователь" с выпадающим списком -->
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="icons/user.svg" alt="Пользователь" class="user-icon"> Пользователь
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                        <li><a class="dropdown-item" href="settings.html">Настройки</a></li>
+                        <li><a class="dropdown-item" href="help.html">Помощь</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 🔹 Основной контент -->
+        <main class="main-content">
+            <h1>Каталог товаров</h1>
+
+            <!-- 🔹 Bootstrap Grid (4 карточки) -->
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+                    <div class="col d-flex">
+                        <div class="card flex-fill">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Товар 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Товар 1</h5>
+                                <p class="card-text">Качественный товар по доступной цене.</p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a href="#" class="btn btn-sm btn-primary">View</a>
+                                    <a href="#" class="btn btn-sm btn-secondary">Edit</a>
+                                </div>
+                                <small class="text-muted">9 mins ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex">
+                        <div class="card flex-fill">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Товар 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Товар 2</h5>
+                                <p class="card-text">Стильный дизайн и надежность.</p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a href="#" class="btn btn-sm btn-primary">View</a>
+                                    <a href="#" class="btn btn-sm btn-secondary">Edit</a>
+                                </div>
+                                <small class="text-muted">9 mins ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex">
+                        <div class="card flex-fill">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Товар 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Товар 3</h5>
+                                <p class="card-text">Премиальный продукт с улучшенными функциями.</p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a href="#" class="btn btn-sm btn-primary">View</a>
+                                    <a href="#" class="btn btn-sm btn-secondary">Edit</a>
+                                </div>
+                                <small class="text-muted">9 mins ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex">
+                        <div class="card flex-fill">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Товар 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Товар 4</h5>
+                                <p class="card-text">Дополнительный товар для расширения каталога.</p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a href="#" class="btn btn-sm btn-primary">View</a>
+                                    <a href="#" class="btn btn-sm btn-secondary">Edit</a>
+                                </div>
+                                <small class="text-muted">9 mins ago</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- 🔹 Подключение Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
