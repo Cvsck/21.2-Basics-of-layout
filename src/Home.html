@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Главная</title>
-    <link rel="stylesheet" href="css/bootstrap.css"> <!-- Подключение Bootstrap -->
-    <link rel="stylesheet" href="css/styles.css"> <!-- Подключение файла стилей -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <div class="container-fluid">
@@ -30,6 +30,17 @@
                     <li class="nav-item"><a class="nav-link" href="profile.html">Профиль</a></li>
                     <li class="nav-item"><a class="nav-link" href="logout.html">Выход</a></li>
                 </ul>
+
+                <!-- 🔹 Кнопка "Пользователь" с выпадающим списком -->
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="icons/user.svg" alt="Пользователь" class="user-icon"> Пользователь
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                        <li><a class="dropdown-item" href="settings.html">Настройки</a></li>
+                        <li><a class="dropdown-item" href="help.html">Помощь</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
@@ -53,30 +64,31 @@
                 </div>
                 <div class="product-card">
                     <h5>Товар 2</h5>
-                    <p>$100</p>
+                    <p>$150</p>
                     <ul>
-                        <li>10 пользователей включено</li>
-                        <li>2 ГБ хранилища</li>
+                        <li>20 пользователей включено</li>
+                        <li>5 ГБ хранилища</li>
                         <li>Email поддержка</li>
-                        <li>Доступ в центр помощи</li>
+                        <li>Приоритетная помощь</li>
                     </ul>
                     <a href="#" class="btn btn-primary">Купить</a>
                 </div>
                 <div class="product-card">
                     <h5>Товар 3</h5>
-                    <p>$100</p>
+                    <p>$200</p>
                     <ul>
-                        <li>10 пользователей включено</li>
-                        <li>2 ГБ хранилища</li>
-                        <li>Email поддержка</li>
-                        <li>Доступ в центр помощи</li>
+                        <li>50 пользователей включено</li>
+                        <li>10 ГБ хранилища</li>
+                        <li>Email + телефонная поддержка</li>
+                        <li>Премиум-услуги</li>
                     </ul>
                     <a href="#" class="btn btn-primary">Купить</a>
-             </div>
+                </div>
             </div>
         </main>
     </div>
 
-    <script src="js/bootstrap.bundle.js"></script> <!-- Локальный Bootstrap JS -->
+    <!-- 🔹 Подключение Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
