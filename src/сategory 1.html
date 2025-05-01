@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Категория 1</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- 🔹 Боковое меню -->
+        <nav class="sidebar">
+            <div>
+                <div class="sidebar-header">
+                    <div class="logo">B</div>
+                    <h4>Меню</h4>
+                </div>
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalog.html">Категории</a></li>
+                    <li class="nav-item"><a class="nav-link" href="orders.html">Заказы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+
+            <!-- 🔹 Профиль и Выход -->
+            <div class="profile-section">
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link" href="profile.html">Профиль</a></li>
+                    <li class="nav-item"><a class="nav-link" href="logout.html">Выход</a></li>
+                </ul>
+
+                <!-- 🔹 Кнопка "Пользователь" с выпадающим списком -->
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="icons/user.svg" alt="Пользователь" class="user-icon"> Пользователь
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                        <li><a class="dropdown-item" href="settings.html">Настройки</a></li>
+                        <li><a class="dropdown-item" href="help.html">Помощь</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 🔹 Основной контент -->
+        <main class="main-content">
+            <h1>Категория 1</h1>
+
+            <!-- 🔹 Bootstrap Grid (6 карточек, 3 в ряду, увеличенная цена) -->
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Товар 1</h5>
+                                <p class="card-text price">$100</p>
+                                <ul>
+                                    <li>10 пользователей включено</li>
+                                    <li>2 ГБ хранилища</li>
+                                    <li>Email поддержка</li>
+                                    <li>Доступ в центр помощи</li>
+                                </ul>
+                                <div class="text-center">
+                                    <a href="#" class="btn btn-primary">Купить</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Товар 2</h5>
+                                <p class="card-text price">$100</p>
+                                <ul>
+                                    <li>10 пользователей включено</li>
+                                    <li>2 ГБ хранилища</li>
+                                    <li>Email поддержка</li>
+                                    <li>Доступ в центр помощи</li>
+                                </ul>
+                                <div class="text-center">
+                                    <a href="#" class="btn btn-primary">Купить</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Товар 3</h5>
+                                <p class="card-text price">$100</p>
+                                <ul>
+                                    <li>10 пользователей включено</li>
+                                    <li>2 ГБ хранилища</li>
+                                    <li>Email поддержка</li>
+                                    <li>Доступ в центр помощи</li>
+                                </ul>
+                                <div class="text-center">
+                                    <a href="#" class="btn btn-primary">Купить</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Товар 4</h5>
+                                <p class="card-text price">$100</p>
+                                <ul>
+                                    <li>10 пользователей включено</li>
+                                    <li>2 ГБ хранилища</li>
+                                    <li>Email поддержка</li>
+                                    <li>Доступ в центр помощи</li>
+                                </ul>
+                                <div class="text-center">
+                                    <a href="#" class="btn btn-primary">Купить</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Товар 5</h5>
+                                <p class="card-text price">$100</p>
+                                <ul>
+                                    <li>10 пользователей включено</li>
+                                    <li>2 ГБ хранилища</li>
+                                    <li>Email поддержка</li>
+                                    <li>Доступ в центр помощи</li>
+                                </ul>
+                                <div class="text-center">
+                                    <a href="#" class="btn btn-primary">Купить</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Товар 6</h5>
+                                <p class="card-text price">$100</p>
+                                <ul>
+                                    <li>10 пользователей включено</li>
+                                    <li>2 ГБ хранилища</li>
+                                    <li>Email поддержка</li>
+                                    <li>Доступ в центр помощи</li>
+                                </ul>
+                                <div class="text-center">
+                                    <a href="#" class="btn btn-primary">Купить</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- 🔹 Подключение Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

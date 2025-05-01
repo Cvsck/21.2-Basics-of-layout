@@ -124,3 +124,10 @@ body {
     height: 24px;
     margin-right: 10px;
 }
+/* 🔹 Увеличенный размер цены */
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+    text-align: center;
+}
